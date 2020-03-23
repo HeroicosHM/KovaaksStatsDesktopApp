@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">Electron Starter</title>
+    <meta http-equiv="Content-Secure-Policy" content="script-src 'self' 'unsafe-inline';">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/index.css">
+  </head>
+  <body>
+    <div id="container">
+      <nav>
+        <div id="titleShown"></div>
+        <div id="buttons">
+          <div id="minimize">
+            <img src="../img/minimize.svg" class="filter-white"/>
+          </div>
+          <div id="maximize">
+            <img src="../img/settings.svg" class="filter-white"/>
+          </div>
+          <div id="close">
+            <img src="../img/close.svg" class="filter-white"/>
+          </div>
+        </div>
+      </nav>
+    </div>
+    <main>
+      <h1>Hello World!</h1>
+      <p>
+        Using Node <script>document.write(process.versions.node)</script>,
+        Chrome <script>document.write(process.versions.chrome)</script>,
+        and Electron <script>document.write(process.versions.electron)</script>.
+      </p>
+      <button id="statsFolder" class='statsBtn'>Select</button>
+    </main>
+    <script src="js/init.js"></script>
+    <script src="js/menuHandler.js"></script>
+  </body>
+</html>

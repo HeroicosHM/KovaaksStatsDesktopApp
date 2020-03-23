@@ -1,0 +1,29 @@
+{
+  "name": "kovaaksstatsdesktopapp",
+  "version": "1.0.0",
+  "description": "A desktop application for tracking Kovaak's Aim Trainer Stats",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/HeroicosHM/KovaaksStatsDesktopApp.git"
+  },
+  "author": "Houghton Mayfield",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/HeroicosHM/KovaaksStatsDesktopApp/issues"
+  },
+  "homepage": "https://github.com/HeroicosHM/KovaaksStatsDesktopApp#readme",
+  "devDependencies": {
+    "electron": "^8.1.1"
+  },
+  "dependencies": {
+    "electron-settings": "^3.2.0",
+    "jquery": "^3.4.1",
+    "path": "^0.12.7",
+    "url": "^0.11.0"
+  }
+}

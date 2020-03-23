@@ -1,0 +1,109 @@
+body, html {
+  background-color: #4b4f57;
+  margin: 0;
+  padding: 0;
+  font-family: "montserrat",sans-serif;
+}
+
+body {
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+  position: absolute;
+  top: 0;
+  height: calc(100% - 60px);
+  width: calc(100% - 60px);
+  background-color: #4b4f57;
+  color: #f7f7f7;
+  margin: 30px;
+}
+
+#container{
+  width: 100%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#container nav{
+  display: block;
+  width: 100%;
+  height: 30px;
+  background-color: #2e3033;
+  -webkit-app-region: drag;
+  -webkit-user-select: none;
+}
+
+#container nav #titleShown{
+  width: 30%;
+  height: 100%;
+  line-height: 30px;
+  color: #f7f7f7;
+  font-size: 1.2em;
+  font-weight: bold;
+  float: left;
+  padding: 0 0 0 1em;
+}
+
+#container nav #buttons{
+  float: right;
+  width: 150px;
+  height: 100%;
+  line-height: 30px;
+  background-color: #222222;
+  -webkit-app-region: no-drag;
+}
+
+#buttons #minimize, #buttons #maximize, #buttons #close {
+  float: left;
+  height: 100%;
+  width: 33%;
+  text-align: center;
+  color: #f7f7f7;
+  transition: all ease-in-out .2s;
+  cursor: default;
+}
+
+#buttons #close {
+  width: 34%;
+}
+
+#buttons #minimize:hover, #buttons #maximize:hover {
+  background-color: #333333;
+}
+
+#buttons #close:hover {
+  background-color: #ff0000;
+}
+
+.filter-white{
+  margin: 6.5px;
+  width: 16px;
+  height: 16px;
+  filter: invert(100%) sepia(63%) saturate(57%) hue-rotate(28deg) brightness(113%) contrast(94%);
+}
+
+.statsBtn {
+  border: none;
+  margin: 20px;
+  width: 110px;
+  height: 30px;
+  text-align: center;
+  line-height: 20px;
+  font-family: "montserrat", sans-serif;
+  text-transform: uppercase;
+  border-radius: 6px;
+  cursor: pointer;
+  color: #f7f7f7;
+  background-size: 200%;
+  background-image: linear-gradient(to left, #12CBC4, #0652DD, #12CBC4);
+  transition: 0.6s;
+}
+
+.statsBtn:hover{
+  background-position: right;
+}
